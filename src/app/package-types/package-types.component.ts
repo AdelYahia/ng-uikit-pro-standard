@@ -13,16 +13,18 @@ export class PackageTypesComponent implements OnInit {
   // tslint:disable-next-line:ban-types
   public itemsList: Object[] = [
     {
-      title: 'Description',
-      description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson asquid.'
+      title: 'Transportation',
+      description: 'Mashaer by buses or Train (based on Camp location)'
     },
     {
-      title: 'Details',
-      description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid.'
+      title: 'Housing',
+      description: 'Mina Tents prepared with gypsum board and aluminium doors- and AC as it is shown in the program- ' +
+        'internal loud speakers- sofa bed- pillow- sheet cases for sleeping- thick cotton blanket- shelves for luggage- shelves for shoes - ' +
+        'fabric carpet for camp halls - installed Wi-Fi service and a bathroom for every 30 pilgrim and a separate bathroom for special needs pilgrims - '
     },
     {
-      title: 'Shipping',
-      description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid.'
+      title: 'Food',
+      description: 'Assembly at meeting point before departure to Mashaer served with 5 small sandwiches (Cheese/ Tuna/ Mortadella/ Turkey/ Peanut butter and Jam)/ Small bag of chips/ bottle of juice/Water bottle'
     }
   ];
   ngOnInit() {

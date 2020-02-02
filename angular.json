@@ -35,7 +35,7 @@
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "node_modules/ng-uikit-pro-standard/assets/scss/bootstrap/bootstrap.scss",
               "node_modules/ng-uikit-pro-standard/assets/scss/mdb.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css",
+//              "node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [
