@@ -1,5 +1,14 @@
 export class Package {
-  constructor(public  name: string, public transportation: string, public housing: string, public food: string,
-              public stars: number, public acType: string, public womenAlown: boolean) {
+
+  constructor(public id: number,
+              public title: string,
+              public type: number,
+              public withTrain: boolean,
+              public housing: string,
+              public food: string,
+              public stars: number,
+              public acType: string,
+              public noMahram: boolean,
+              public price: number) {
   }
 }

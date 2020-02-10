@@ -7,31 +7,35 @@ import {AgmCoreModule} from '@agm/core';
 import {AppComponent} from './app.component';
 
 import {MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule} from 'ng-uikit-pro-standard';
-import {IntroComponent} from './navigation/intro/intro.component';
-import {IntroVideoComponent} from './navigation/intro-video/intro-video.component';
-import {PackagesComponent} from './packages/packages.component';
-import {PackagesService} from './services/packages.service';
-import {AuthGardService} from './services/auth-gard.service';
+import {IntroVideoComponent} from './landing/intro-video/intro-video.component';
+import {PackagesComponent} from './reservation/packages/packages.component';
+import {PackagesService} from './services/packages/packages.service';
+import {AuthService} from './services/auth-guard/auth.service';
 import {RouterModule, Routes} from '@angular/router';
-import { ViewPackageComponent } from './view-package/view-package.component';
-import { PackageTypesComponent } from './package-types/package-types.component';
-import { SearchPackageComponent } from './search-package/search-package.component';
+import {ViewPackageComponent} from './reservation/view-package/view-package.component';
+import {PackageTypesComponent} from './landing/package-types/package-types.component';
+import {SearchPackageComponent} from './reservation/search-package/search-package.component';
+import { LandingComponent } from './landing/landing.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
-  {path: 'packages', component: PackagesComponent},
-  {path: 'packages/view/:id', component: ViewPackageComponent}
-
+  {path: '', component: LandingComponent, data: {title: 'Landing'}},
+  {path: 'reservation/packages', component: PackagesComponent, data: {title: 'Packages List'}},
+  {path: 'reservation/search-packages', component: SearchPackageComponent, data: {title: 'Search'}},
+  {path: 'packages', component: PackagesComponent, data: {title: 'Packages List'}},
+  {path: 'packages/view/:id', component: ViewPackageComponent, data: {title: 'Package Detail'}}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroComponent,
     IntroVideoComponent,
     PackagesComponent,
     ViewPackageComponent,
     PackageTypesComponent,
-    SearchPackageComponent
+    SearchPackageComponent,
+    LandingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,7 @@ const appRoutes: Routes = [
   providers: [
     MDBSpinningPreloader,
     PackagesService,
-    AuthGardService
+    AuthService
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]

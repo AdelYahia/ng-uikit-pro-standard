@@ -1,0 +1,47 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "type": 1,
+      "title": "Hospitality package",
+      "price": "4000.00 SAR",
+      "withTrain" :  false,
+      "food": "food description",
+      "stars": 5,
+      "acType": "fereon",
+      "noMahram": true
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "title": "Economical package",
+      "price": "2550.00 SAR",
+      "withTrain" :  false,
+      "food": "food description",
+      "stars": 5,
+      "acType": "fereon",
+      "noMahram": true
+    },
+    {
+      "id": 3,
+      "type": 2,
+      "title": "Economical package",
+      "price": "5504.00 SAR",
+      "withTrain" :  false,
+      "food": "food description",
+      "stars": 5,
+      "acType": "fereon",
+      "noMahram": true
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

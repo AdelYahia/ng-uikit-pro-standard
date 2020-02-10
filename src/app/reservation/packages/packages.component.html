@@ -1,0 +1,45 @@
+<section class="view"
+         style="background-image: url('https://wallpapercave.com/wp/wp2069114.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 50% 80%">
+</section>
+
+<div class="my-5"></div>
+<div class="container">
+  <h2> Packages List </h2>
+  <div class="list-group jumbotron">
+    <div class="" *ngFor="let p of packagesLocal; let i=index;"
+                (click)="onViewPackage(i)" )>
+
+      <h3 class="list-group-item-heading">
+        {{p.title}}
+      </h3>
+      <p class="list-group-item-text">
+        {{p.food}}
+      </p>
+      <p class="list-group-item-text">
+        {{p.housing}}
+      </p>
+
+        <li>
+          <span class="badge"></span> {{p.title}}
+        </li>
+        <li>
+          <span class="badge"></span> {{p.price}}
+        </li>
+        <li>
+          <span class="badge"></span> {{p.noMahram}}
+        </li>
+        <li>
+          <span class="badge"></span> {{p.withTrain}}
+        </li>
+        <li>
+          <span class="badge"></span> {{p.acType}}
+        </li>
+        <li>
+          <span class="badge"></span> {{p.stars}}
+        </li>
+    </div>
+  </div>
+</div>
