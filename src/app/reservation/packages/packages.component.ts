@@ -39,12 +39,12 @@ export class PackagesComponent implements OnInit, OnDestroy {
     this.packagesSubscription.unsubscribe();
   }
 
-  private getPackages() {
-    this.packagesLocal = [];
-    this.packagesService.getPackages().subscribe((data: {}) => {
-      // @ts-ignore
-      this.packagesLocal = data;
-    });
-  }
+  // private getPackages() {
+  //   this.packagesLocal = [];
+  //   this.packagesService.getPackages().subscribe((data: {}) => {
+  //     // @ts-ignore
+  //     this.packagesLocal = data;
+  //   });
+  // }
 
 }
