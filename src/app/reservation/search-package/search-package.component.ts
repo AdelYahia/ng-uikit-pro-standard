@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 import {FormBuilder, FormGroup} from '@angular/forms';
-import {AuthService} from '../../services/auth-guard/auth.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -14,7 +13,6 @@ export class SearchPackageComponent implements OnInit {
   searchePackageForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder,
-              private authService: AuthService,
               private router: Router) {
   }
 

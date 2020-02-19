@@ -10,7 +10,6 @@ import {MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule} from 'ng-uiki
 import {IntroVideoComponent} from './landing/intro-video/intro-video.component';
 import {PackagesComponent} from './reservation/packages/packages.component';
 import {PackagesService} from './services/packages/packages.service';
-import {AuthService} from './services/auth-guard/auth.service';
 import {RouterModule, Routes} from '@angular/router';
 import {ViewPackageComponent} from './reservation/view-package/view-package.component';
 import {PackageTypesComponent} from './landing/package-types/package-types.component';
@@ -53,8 +52,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     MDBSpinningPreloader,
-    PackagesService,
-    AuthService
+    PackagesService
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
